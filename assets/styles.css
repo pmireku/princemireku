@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+}
+
+.quick-links {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white; 
+    z-index: 1000;
+}
