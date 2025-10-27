@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Prince Mireku - Research Assistant @ CKT UTAS">
@@ -25,18 +25,21 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Theme Script -->
+    <script src="assets/theme.js" defer></script>
+
     <title>Prince Mireku</title>
 </head>
 <body class="container w-4/5 md:w-1/2 mt-12 text-black/90">
     <!-- Header -->
-    <section class="w-full flex flex-col sm:flex-row">
+    <section class="w-full flex flex-col sm:flex-row pt-18">
         <img class="rounded mr-6 w-[100%] sm:w-[40%] md:w-[31%]" src="assets/images/profile.png" alt="profile_pic">
         <div class="py-4 text-sm">
             <p class="text-[1.8rem] md:text-[2.5rem] leading-tight font-medium sm:mb-5">
                 Prince Mireku
             </p>
             <h4 class="flex flex-col gap-2"> 
-                <p class="font-bold">Student Researcher @ Google || Masters Student @ Ashesi</p>
+                <p class="font-bold">Student Researcher @ Google</p>
                 <a href="mailto:prince.mireku@ashesi.edu.gh">prince.mireku@ashesi.edu.gh</a>
             </h4>
             <div class="flex socials mt-5 space-x-3 items-center">
@@ -106,18 +109,42 @@
         <a href="assets/files/Prince_Mireku_CV.pdf" target="_blank">
             CV
         </a>
-        <a target="_blank" href="https://medium.com/@devfreak_">Blog</a>
+        <a target="_blank" href="https://medium.com/@devfreak_">Awards</a>
         <a href="miscellaneous.html">Misc.</a>
     </div>
 
     <!-- News -->
     <section id="news">
         <h5 class="text-2xl font-light mb-5">News</h5>
-        <table class="border-separate"> 
+        <table class="border-separate">
+            <tr>
+                <td class="md:min-w-[80px] font-bold align-text-top">Oct. 2025</td>
+                <td>
+                    ✨ Happy to share that I've joined <strong>Google</strong> as a Student Researcher. 
+                </td>
+            </tr>
+            <tr>
+                <td class="md:min-w-[80px] font-bold align-text-top">Aug. 2025</td>
+                <td>
+                    Started my Masters program at <a href="https://ashesi.edu.gh/" class="text-blue-400">Ashesi University</a>.
+                </td>
+            </tr>
+            <tr>
+                <td class="md:min-w-[80px] font-bold align-text-top">Aug. 2025</td>
+                <td>
+                    I'll be in Kigali, Rwanda for the Deep Learning Indaba 2025. Let's connect!. 
+                </td>
+            </tr>
+            <tr>
+                <td class="md:min-w-[80px] font-bold align-text-top">May 2025</td>
+                <td>
+                    Happy to share that our abstract got accepted as a <u><strong>Spotlight</strong></u> and <u><strong>Poster </strong></u>Presentation at IndabaXGhana 2025
+                </td>
+            </tr> 
             <tr>
                 <td class="md:min-w-[80px] font-bold text-red-500 align-text-top">Dec. 2024</td>
                 <td>
-                    ✨ I'm excited to share that I'll be virtually attending the <strong>NeurIPS 2024 Conference!</strong> 
+                    I'm excited to share that I'll be virtually attending the <strong>NeurIPS 2024 Conference!</strong> 
                     Thanks to <a href="https://www.linkedin.com/company/global-south-in-ai/about/"><i>Gloabal South in AI</i></a>. 
                     Let's connect on Whova. 
                 </td>
@@ -209,38 +236,23 @@
                 </div>
             </div>
         </div>
-        <div id="res-3" class="flex flex-col sm:flex-row my-10 w-full space-x-3">
-            <span class="sm:min-w-[150px] mb-3">
-                <img src="assets/images/res-3.png" alt="">
-            </span>
-            <div class="3/5">
-                <a href="https://drive.google.com/file/d/1URrfbw-musQDhzoJSsMko4rtCOJff27G/view" target="_blank" class="font-semibold text-base mb-2 text-blue-500">
-                    Fault-Tolerant Techniques in Residue Number System for Reliable Arithmetic Operations 
-                    <i class="text-black"> | 2023</i>
-                </a>
-                <div class="text-sm font-[400] my-1">
-                    <strong>Prince Mireku*</strong>, Mohammed Ibrahim Daabo
-                </div>
-                <p class="mb-2">
-                    This research project focuses on enhancing the reliability of Residue Number System (RNS) arithmetic 
-                    operations through the development of effective fault tolerance techniques. We also proposed a novel 
-                    integrated fault-tolerant technique that combines redundant residues, modular checksums, and 
-                    Reed-Solomon codes for error detection & correction. This integrated approach aims to improve fault 
-                    coverage and reliability in RNS arithmetic operations compared to existing solutions, with manageable overhead.
-                </p>
-                <div class="flex space-x-3 text-blue-500">
-                    <a href="https://drive.google.com/file/d/1URrfbw-musQDhzoJSsMko4rtCOJff27G/view">[ Report ]</a>
-                </div>
-            </div>
-        </div>
+        
     </section>
     <hr class="my-10">
 
     <!-- Education -->
-    <section class="text-sm ">
+    <section class="text-sm mb-5">
         <h5 class="text-2xl font-light mb-5">Education</h5>
         <h1 class="flex justify-between font-semibold space-y-2">
-            <span>University for Development Studies</span>
+            <span class="font-bold">Ashesi University</span>
+            <span>Aug. 2025 - Present</span>
+        </h1>
+        <p>MSc. Intelligent Computing Systems</p>
+        <!-- <p class="text-sm my-2">To be determined</p> -->
+    </section>
+    <section class="text-sm my-5">
+        <h1 class="flex justify-between font-semibold space-y-2">
+            <span class="font-bold">University for Development Studies</span>
             <span>Sep. 2019 - Nov. 2023</span>
         </h1>
         <p>B.Sc. Computer Science</p>
@@ -249,7 +261,7 @@
 
     <!-- Last Update -->
     <section class="mt-12 md:mt-24 text-center">
-        Last updated: December 2024
+        Last updated: October 2025
     </section>
 
     <!-- Traffic -->
