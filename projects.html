@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Prince Mireku - Projects: AI/ML research projects and applications">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://pmireku.github.io/princemireku/projects.html">
+    <meta property="og:locale" content="en_US">
+    <meta name="og:title" content="Projects - Prince Mireku">
+    <meta name="og:description" content="AI/ML research projects and applications">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="https://pmireku.github.io/princemireku/projects.html">
+    <meta name="og:site_name" content="Prince Mireku">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Theme Script -->
+    <script src="assets/theme.js" defer></script>
+
+    <title>Projects - Prince Mireku</title>
+    
+    <style>
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .resource-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin-right: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        [data-theme="dark"] .resource-link {
+            background-color: #333333;
+            color: #60a5fa;
+            border: 1px solid #444444;
+        }
+        
+        [data-theme="dark"] .resource-link:hover {
+            background-color: #444444;
+            color: #93c5fd;
+        }
+        
+        [data-theme="light"] .resource-link {
+            background-color: #e5e7eb;
+            color: #2563eb;
+            border: 1px solid #d1d5db;
+        }
+        
+        [data-theme="light"] .resource-link:hover {
+            background-color: #d1d5db;
+            color: #1d4ed8;
+        }
+    </style>
+</head>
+<body class="container w-4/5 md:w-2/3 lg:w-1/2 mt-12">
+
+    <h1 class="text-center text-3xl font-bold underline my-12">Projects</h1>
+
+    <!-- Projects Grid -->
+    <div class="space-y-12">
+        
+        <!-- Project 1: Afrimed Tutor -->
+        <div class="project-card grid grid-cols-1 md:grid-cols-2 gap-6 items-start p-6 rounded-lg border" style="border-color: var(--border-color); background-color: var(--card-bg);">
+            <!-- Image -->
+            <div class="flex items-center justify-center">
+                <div class="w-full h-64 md:h-80 bg-gray-300/20 rounded-lg flex items-center justify-center overflow-hidden">
+                    <img src="assets/images/afrimed-tutor.png" alt="AfriMed Tutor - RAG System for Medical Education" class="w-full h-full object-cover rounded-lg" onerror="this.style.display='none'">
+                    <div class="text-center text-gray-400" style="display: none;">
+                        <p class="text-sm">AfriMed Tutor</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Details -->
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">AfriMed Tutor</h2>
+                    <p class="text-sm font-semibold mb-3" style="color: var(--link-color);">RAG System</p>
+                    <p class="text-base leading-relaxed mb-4">
+                        An intelligent tutoring system leveraging Retrieval-Augmented Generation (RAG) technology to provide personalized medical education for African healthcare contexts. This system combines state-of-the-art NLP with medical domain expertise to deliver comprehensive learning experiences.
+                    </p>
+                </div>
+                
+                <!-- Resource Links -->
+                <div class="mt-6">
+                    <p class="text-xs font-semibold mb-3 uppercase opacity-70">Resources</p>
+                    <div class="flex flex-wrap">
+                        <a href="https://github.com/NLP-ICS/AfriMed_Tutor" target="_blank" rel="noopener noreferrer" class="resource-link">
+                            Code
+                        </a>
+                        <a href="https://github.com/NLP-ICS/AfriMed_Tutor" target="_blank" rel="noopener noreferrer" class="resource-link">
+                            Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Backend Agentic System -->
+        <div class="project-card grid grid-cols-1 md:grid-cols-2 gap-6 items-start p-6 rounded-lg border" style="border-color: var(--border-color); background-color: var(--card-bg);">
+            <!-- Image -->
+            <div class="flex items-center justify-center">
+                <div class="w-full h-64 md:h-80 bg-gray-300/20 rounded-lg flex items-center justify-center overflow-hidden">
+                    <img src="assets/images/agentic-system.png" alt="Backend Agentic System - AI Agent Framework" class="w-full h-full object-cover rounded-lg" onerror="this.style.display='none'">
+                    <div class="text-center text-gray-400" style="display: none;">
+                        <p class="text-sm">Backend Agentic System</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Details -->
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">Backend Agentic System</h2>
+                    <p class="text-sm font-semibold mb-3" style="color: var(--link-color);">Agentic AI Framework</p>
+                    <p class="text-base leading-relaxed mb-4">
+                        A robust backend framework for building autonomous AI agents. This system provides a flexible architecture for developing intelligent agents capable of reasoning, planning, and executing complex tasks. Designed for scalability and extensibility.
+                    </p>
+                </div>
+                
+                <!-- Resource Links -->
+                <div class="mt-6">
+                    <p class="text-xs font-semibold mb-3 uppercase opacity-70">Resources</p>
+                    <div class="flex flex-wrap">
+                        <a href="https://github.com/NLP-ICS/agentic-builder-backend" target="_blank" rel="noopener noreferrer" class="resource-link">
+                            Code
+                        </a>
+                        <a href="https://github.com/NLP-ICS/agentic-builder-backend" target="_blank" rel="noopener noreferrer" class="resource-link">
+                            Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
