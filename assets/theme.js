@@ -1,7 +1,7 @@
 // Theme Management
 class ThemeManager {
     constructor() {
-        this.currentTheme = localStorage.getItem('theme') || 'light';
+        this.currentTheme = localStorage.getItem('theme') || 'dark';
         this.init();
     }
 
@@ -17,6 +17,15 @@ class ThemeManager {
         document.documentElement.setAttribute('data-theme', theme);
         this.currentTheme = theme;
         localStorage.setItem('theme', theme);
+        this.updateFlagCounter(theme);
+    }
+
+    updateFlagCounter(theme) {
+        const flagCounter = document.getElementById('flag-counter');
+        const imageSource = flagCounter && flagCounter.getAttribute(`data-${theme}-src`);
+        if (imageSource) {
+            flagCounter.src = imageSource;
+        }
     }
 
     toggleTheme() {
